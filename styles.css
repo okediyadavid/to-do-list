@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#datetime {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+#inputBox {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 50px;
+}
+
+#categorySelect, #elementTypeSelect {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3da33d;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addBtn:hover {
+    background-color: #60b160;
+}
+
+ul.todoList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul.todoList li {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+ul.todoList li:hover {
+    background-color: #e1e1e1;
+}
+
+ul.todoList li p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.deleteBtn {
+    color: #ff0000;
+}
+
+.editBtn {
+    color: #008000;
+}
+
+.download-btn {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    #inputBox, #categorySelect, #elementTypeSelect, #addBtn, .download-btn {
+        padding: 10px;
+    }
+
+    ul.todoList li {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #inputBox, #categorySelect, #elementTypeSelect, #addBtn, .download-btn {
+        padding: 8px;
+    }
+
+    ul.todoList li {
+        padding: 6px;
+    }
+
+    .btn {
+        padding: 4px;
+        font-size: 12px;
+    }
+}
