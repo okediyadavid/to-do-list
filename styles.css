@@ -8,11 +8,28 @@
 }
 
 body {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: url('./DO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: bgChange 20s infinite alternate;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+@keyframes bgChange {
+    0% {
+        background: url('./DO.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    50% {
+        background: url('./do2.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    100% {
+        background: url('./do3.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
 }
 
 .container {
